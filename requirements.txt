@@ -1,0 +1,9 @@
+django>=2.0,<3.0
+psycopg2>=2.7,<3.0
+django-environ
+django-filter
+djangorestframework
+django-cors-headers
+django-rest-auth
+django-allauth
+django-extensions
