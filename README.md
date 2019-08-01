@@ -30,6 +30,10 @@ rm -rf .git
 git init
 ```
 
+Copie o arquivo `templatesite/.env.example` para `templatesite/.env`. O
+ arquivo `.env` é onde as variáveis de ambiente estão localizadas. **Ele não
+ deve ser adicionado ao Git e já está no gitignore.** 
+
 Substitua o valor da variável `SECRET_KEY` dentro do arquivo
  `templatesite/.env` por alguma outra string aleatória. A string em si não tem muita
  importância no ambiente de desenvolvimento, mas deve ser gerada com carinho
@@ -75,6 +79,11 @@ dos arquivos `settings.py` e `urls.py` do app principal.
 ## Recomendações
 Aqui, segue uma breve descrição dos nossos valores quanto à forma recomendada de
  desenvolver dentro do ambiente django.
+
+### Arquivos de IDE
+Não deixe que arquivos de configuração da sua IDE entrem no versionamento do
+ código. Além de não fazer parte do projeto, pode acabar desconfigurando a
+ IDE de outro desenvolvedor. 
 
 ### Não crie apps excessivos
 Os apps do Django são feitos para reutilizar código entre projetos, além de
@@ -124,3 +133,11 @@ A grande maioria dos apps se utilizam da mesma estrutura de arquivos, que
  - **migrations**: Diretório onde o Django cria as migrações.
  - **models**: Package de entidades do banco de dados.
  
+ 
+ ## Utilidades
+ ### Outras imagens do Docker
+ Lembre-se de que graças ao Docker, podemos conectar facilmente o nosso
+  ambiente a outros serviços. Um exemplo muito utilizado é o
+  [Selenium](https://en.wikipedia.org/wiki/Selenium_(software)), que pode ser
+  conectado através das
+  [Imagens Oficiais](https://github.com/SeleniumHQ/docker-selenium).
