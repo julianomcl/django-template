@@ -6,7 +6,7 @@ services:
   web:
     build: .
     env_file: ./templatesite/.env
-    command: python manage.py runserver
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
