@@ -112,6 +112,8 @@ A grande maioria dos apps se utilizam da mesma estrutura de arquivos, que
  - **app.py**: Onde fica a configuração básica do app
  - **admin.py**: Onde devemos registrar as entidades no serviço de administração
   do Django
+ - **signals.py**: Onde vão os _signals_ do Django. (Apenas inclua se for
+  usar _signals_)
  - **serializers.py**: Onde colocamos os serializadores do Django Rest
   Framework para as entidades desse app
  - **urls.py**: Onde está a estrutura de roteamento **interna** do app
